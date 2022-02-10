@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element with id always get first preference over class
+        ID SELECTOR */
+        #redElement{
+            color: red;
+            background-color: cornsilk;
+        }
+        /*Element with class
+        CLASS SELECTOR*/
+        .rgBg{
+            color: royalblue;
+            background-color: skyblue;
+        }
+        /* all p elements 
+        ELEMENT SELECTOR*/
+        p{
+            color: tomato;
+            border: 2px solid red;
+        }
+        /* GROUPING SELECTOR */
+        footer, span{
+            background-color: rgb(56, 161, 56);
+            color: rgb(247, 0, 255);
+        }
+    </style>
+</head>
+<body>
+     <!-- selector {property : value;} means
+    p {color : black;} where p is paragraph tag, color is property and black is value of the property that we want to set.
+    Note - Css has 4 main Selectors - Css element selector, css id selector, css class selector, css grouping selector -->
+
+    <h2>Css Selectors</h2>
+    <p id="blue" class="rgBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo est iure autem enim, esse ipsum reprehenderit 
+        obcaecati eveniet vitae molestiae eaque facere, quibusdam, culpa eum explicabo eius officia! Sit.
+    Optio numquam non rem, expedita ducimus id laborum minima aspernatur 
+    aliquid in architecto sit, debitis exercitationem ut ipsum repellendus, 
+    nam veritatis excepturi officiis sed earum dicta? Voluptatem, nostrum. Libero, dolore!</p>
+    <p id="redElement" class="rgBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo est iure autem enim, esse ipsum reprehenderit 
+        obcaecati eveniet vitae molestiae eaque facere, quibusdam, culpa eum explicabo eius officia! Sit.
+    Optio numquam non rem, expedita ducimus id laborum minima aspernatur 
+    aliquid in architecto sit, debitis exercitationem ut ipsum repellendus, 
+    nam veritatis excepturi officiis sed earum dicta? Voluptatem, nostrum. Libero, dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo est iure autem enim, esse ipsum reprehenderit 
+        obcaecati eveniet vitae molestiae eaque facere, quibusdam, culpa eum explicabo eius officia! Sit.
+    Optio numquam non rem, expedita ducimus id laborum minima aspernatur 
+    aliquid in architecto sit, debitis exercitationem ut ipsum repellendus, 
+    nam veritatis excepturi officiis sed earum dicta? Voluptatem, nostrum. Libero, dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo est iure autem enim, esse ipsum reprehenderit 
+        obcaecati eveniet vitae molestiae eaque facere, quibusdam, culpa eum explicabo eius officia! Sit.
+    Optio numquam non rem, expedita ducimus id laborum minima aspernatur 
+    aliquid in architecto sit, debitis exercitationem ut ipsum repellendus, 
+    nam veritatis excepturi officiis sed earum dicta? Voluptatem, nostrum. Libero, dolore!</p>
+    <span>this is span</span>
+    <footer>this is footer</footer>
+    
+</body>
+</html>

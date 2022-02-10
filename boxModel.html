@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* universal Selector*/
+        *{
+            box-sizing: border-box; /*this property is really important if we dont want to affect the inner element when we do stuff like padding, marginetc */
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(36, 138, 206);
+        }
+        .container{
+            background-color: rgb(189, 144, 87);
+            border: 10px solid rgb(78, 78, 43);
+
+            /*padding elements from the border.
+            /*margin to seperate the borders of different elements
+            Note - padding occurs from the inside of the element whereas margin occurs from the outside of the element.
+            We can set margin and padding for top, bottom, left, right like this*/
+           /*First way
+            padding-top: 20px;
+            padding-bottom: 30px;
+            padding-right: 40px;
+            padding-left: 50px;*/
+
+           /*Second way*/ 
+           /* padding/margin = top, right, bottom, left (TRBL) ----this is the Technique for padding and margin
+           padding: 20px, 40px, 30px, 50px;
+           margin: 20px, 40px, 30px, 50px;*/
+           
+           /*third way recommended one*/ 
+           /* padding: x y;  where x = top & bottom and y = left & right  */
+           padding: 34px 50px;
+           margin: 10px 10px;
+           border-radius: 20px;
+           width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Margin>Border>Padding>Element</h1>
+    <div class="container">
+        <h3>First Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Possimus non dolorem fugiat ut aperiam itaque 
+            culpa tempore rem. Dolorum, quo.</p>
+    </div>
+    <div class="container">
+        <h3>Second Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Possimus non dolorem fugiat ut aperiam itaque 
+            culpa tempore rem. Dolorum, quo.</p>
+    </div>
+    <div class="container">
+        <h3>third Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Possimus non dolorem fugiat ut aperiam itaque 
+            culpa tempore rem. Dolorum, quo.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and more Designing</title>
+    <style>
+        .container {
+            border: 2px solid rgb(173, 81, 173);
+            background: rgb(177, 185, 97);
+            margin: 34px auto;
+            padding: 34px;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none;
+            /*it will help to remove the line under "Read More" link*/
+            color: rgb(17, 15, 15);
+        }
+
+        /*this property applies when we take our curser on the link*/
+        a:hover {
+            /*it will change the color of the read more link when i get curser on that(font color)*/
+            color: rgb(35, 21, 231);
+            /*it will change the color of the read more link when i get curser on that(link background color)*/
+            background-color: rgb(218, 32, 19);
+
+        }
+
+        /*once we open the link, it becomes visited and change the color of the link*/
+        a:visited {
+            background-color: gold;
+        }
+
+        a:active {
+            background-color: rgb(25, 196, 62);
+        }
+
+        .btn {
+            background-color: rgb(58, 207, 200);
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 6px;
+            border: 2px solid rgb(12, 4, 2);
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: rgb(231, 212, 35);
+            background-color: rgb(212, 20, 6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h1>Heading 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error assumenda at sit harum nostrum atque placeat
+            animi mollitia. Ad tempore velit iure voluptatibus animi exercitationem omnis, corrupti quis modi, et
+            corporis rem eaque alias.</p>
+        <a href="https://www.google.com/" class="btn">Read More</a>
+        <buttton class="btn">Contact Us</buttton>
+    </div>
+</body>
+
+</html>

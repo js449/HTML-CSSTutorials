@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inconsolata', monospace;
+        }
+
+        .container {
+            width: 900px;
+            border: 5px solid rgb(13, 49, 150);
+            margin: 33px auto;
+            /*auto helps to get the elements in the center*/
+            background: rgb(182, 87, 182);
+        }
+
+        .item {
+            border: 3px solid red;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(135, 238, 17);
+        }
+
+        #fruits {
+            width: 48%;
+            float: right;
+            /*align element in right inside container*/
+        }
+
+        #computers {
+            width: 48%;
+            float: left;
+            /*align element in left inside container*/
+        }
+
+        #stationery {
+            /* width: 100%; */
+            /* float: left; */
+            /*clear: left; /*other elements in the same container which are floating 
+                            on the left direction(#fruits, #computers) will not overlap the #staionery elements
+                             and all the elements will stay in the same container. */
+
+            /*clear: right;/*other elements in the same container which are floating 
+                             on the right direction will not overlap the #staionery elements
+                             and all the elements will stay in the same container. */
+
+            clear: both;
+            /*other elements in the same container which are floating 
+                            will not overlap the #staionery elements
+                            and all the elements will stay in the same container. */
+        }
+
+        p,
+        h1,
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome To My Store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitPara" class="para">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ullam molestias blanditiis Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Distinctio tenetur dignissimos iusto aspernatur neque illo dolor, eius laboriosam
+                consequatur quisquam eveniet impedit, officia, nihil sint tempora magnam animi numquam sunt aliquid.
+                Provident, qui perferendis?dolorem laborum, ipsum omnis labore hic incidunt.
+                Assumenda suscipit
+                aspernatur aliquam molestiae.</p>
+        </div>
+        <div id="computers" class="item">
+            <h3>Computers</h3>
+            <p id="compPara" class="para">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ullam molestias blanditiis Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ut illum praesentium, vel sequi vero reiciendis non, officia perferendis alias minus
+                quisquam ab omnis earum laboriosam temporibus, porro corrupti doloribus recusandae deserunt qui repellat
+                sit.dolorem laborum, ipsum omnis labore hic incidunt.
+                Assumenda suscipit aspernatur aliquam molestiae.</p>
+        </div>
+        <div id="stationery" class="item">
+            <h3>Stationery</h3>
+            <p id="statPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias
+                blanditiis dolorem laborum, ipsum omnis labore hic incidunt. Assumenda suscipit aspernatur aliquam
+                molestiae.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias
+                blanditiis dolorem laborum, ipsum omnis labore hic incidunt. Assumenda suscipit aspernatur aliquam
+                molestiae.</p>
+        </div>
+    </div>
+</body>
+
+</html>

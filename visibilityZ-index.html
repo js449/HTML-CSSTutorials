@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z -Index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        /* when it comes to overlapping, we can overlap one box on another with the help of z-index. it decides whic box will overlap other.
+        Note - Z-index will work only for position: relative, absolute, fixed or sticky not for static(default) */
+        #box1 {
+            background-color: red;
+            position: relative;
+            top: 49px;
+        }
+        #box2 {
+            background-color: black;
+            position: relative;
+            top: 14px;
+            /*Note- so far black box is overlapping red box but once we set black box z-idexing to -1.
+            we can adjust the z-indexing as much as we want more than -1.
+            whatever the element has bigger z-indeing, will overlap the less z-indexing element when two elements are attached.
+            it will set the red box over black box*/
+            z-index: -1; 
+
+            /* visibility: hidden; --------/*hide the element but create an empty space at that place*/
+            /*display: none; ------/*hide the element as well as space*/
+        }
+
+        #box3 {
+            background-color: blue;     
+        }
+        #box4 {
+            background-color: purple; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
